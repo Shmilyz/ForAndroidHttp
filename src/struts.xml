@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<package name="userjson" namespace="/" extends="json-default,struts-default">
+		
+		
+		<action name="login" class="com.action.UserAction">
+			<result type="json">
+				<param name="root">map</param>
+			</result>
+		</action>
+		<action name="sign" class="com.action.SignAction">
+			<result type="json">
+				<param name="root">map</param>
+			</result>
+		</action>
+		
+		<action name="select" class="com.action.Select">
+			<result type="json">
+				<param name="root">map</param>
+			</result>
+		</action>
+		<action name="update" class="com.action.Update">
+			<result type="json">
+				<param name="root">map</param>
+			</result>
+		</action>
+			<action name="love" class="com.action.Love">
+			<result type="json">
+				<param name="root">map</param>
+			</result>
+		</action>
+		<action name="contacts" class="com.action.Contacts">
+			<result type="json">
+				<param name="root">map</param>
+			</result>
+		</action>
+		<action name="insert" class="com.action.Insert">
+			<result type="json">
+				<param name="root">map</param>
+			</result>
+		</action>
+		<action name="exist" class="com.action.Exist">
+			<result type="json">
+				<param name="root">map</param>
+			</result>
+		</action>
+	</package>
+</struts>
