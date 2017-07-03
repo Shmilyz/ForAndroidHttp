@@ -24,7 +24,7 @@ import com.mysql.jdbc.PreparedStatement;
 import com.opensymphony.xwork2.ActionSupport;
 
 import net.sf.json.JSONArray;
-
+//测试
 
 
 public class Contacts extends ActionSupport{
